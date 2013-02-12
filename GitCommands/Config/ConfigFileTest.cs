@@ -390,9 +390,9 @@ namespace GitCommandsTest.Config
                 File.WriteAllText(GetConfigFileName(), GetDefaultConfigFileContent(), GitModule.SystemEncoding);
             }
             ConfigFile configFile = new ConfigFile(GetConfigFileName(), true);
-            Assert.IsTrue(configFile.GetConfigSections().Count == 3);
+            Assert.IsTrue(configFile.ConfigSections.Count == 3);
             configFile.RemoveConfigSection("section1");
-            Assert.IsTrue(configFile.GetConfigSections().Count == 2);
+            Assert.IsTrue(configFile.ConfigSections.Count == 2);
             Assert.IsFalse(configFile.HasConfigSection("section1"));
         }
 
