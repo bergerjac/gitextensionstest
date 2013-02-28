@@ -46,6 +46,7 @@
     <Compile Include="Config\ConfigFileTest.cs" />
     <Compile Include="Git\GitCommandHelpersTest.cs" />
     <Compile Include="Git\EncodingHelperTest.cs" />
+    <Compile Include="Git\RemoteInfoTest.cs" />
     <Compile Include="Helpers\FileInfoExtensions.cs" />
     <Compile Include="Helpers\FileInfoExtensionsTest.cs" />
     <Compile Include="Patch\PatchManagerTest.cs" />
